@@ -3,7 +3,8 @@
 //set 2 state color and count
 //write a function to show change in color of div
 //write a function to change in no of click
-//
+// return both the function using onclik method 
+//add css 
 
 import React from 'react';
 import './App.css';
