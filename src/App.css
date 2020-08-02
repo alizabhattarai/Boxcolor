@@ -1,3 +1,12 @@
+.BOX {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  padding-right: 100px;
+}
+
+
+
 .App {
   background-color: ;
 }

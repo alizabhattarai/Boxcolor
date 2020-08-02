@@ -4,11 +4,6 @@
 //write a function to show change in color of div
 //write a function to change in click
 
-
-
-
-
-
 import React from 'react';
 import './App.css';
 
@@ -19,7 +14,7 @@ class App extends React.Component {
   constructor (props) {
     super(props);
       this.state = {color: blue};
-      this.state = {value:'0'};
+      this.state = {value: 0 };
       this.changeColor = this.changeColor.bind(this);
       this.buttonClicked = this.buttonClicked.bind(this);
     };
@@ -30,24 +25,20 @@ class App extends React.Component {
     }
 
 buttonClicked(event) {
-  this.setState({value:this.state.vale+1});
+  this.setState({value:this.state.value+1});
 }
 
 render() {
   return (
-    <div>
+    <div className= "BOX">
       <div style ={{background: this.state.color}} >
-        <h1>Box Color</h1>
-        <button onclick={this.changeColor}>Click</button>
-        {this.state.value}</div>
-      <button onClick= {this.buttonClicked}>Click</button>
-
-      </div>
-      // <div>{this.state.value}</div>
-      // <button onClick= {this.buttonClicked}>Click</button>
-
-    // </div>
-  )
+        <h1>Change color</h1>
+        <button onClick={this.changeColor}>Click</button>
+        < div >{this.state.value}</div>
+        <button onClick={this.buttonClicked} >Click</button>
+        </div>
+       </div>
+  );
 }
 }
 export default App; 
