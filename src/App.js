@@ -2,7 +2,8 @@
 //define 2 color variable
 //set 2 state color and count
 //write a function to show change in color of div
-//write a function to change in click
+//write a function to change in no of click
+//
 
 import React from 'react';
 import './App.css';
@@ -31,10 +32,9 @@ buttonClicked(event) {
 render() {
   return (
     <div className= "BOX">
-      <div style ={{background: this.state.color}}>
-        <h1>Change color</h1>
-        <button onClick={this.changeColor}>Click</button>
-        < div >{this.state.value}</div>
+      <h1>Change color</h1>
+      <div style ={{background: this.state.color}} onClick={this.changeColor} >
+        <div >{this.state.value}</div>
         <button onClick={this.buttonClicked} >Click</button>
         </div>
        </div>
