@@ -1,9 +1,10 @@
 // first update the functional component to class component 
-//set 2 state color and clickCounter
-//write funciton to show increase in click counter
-//write a function to toggle click
-//write a function to show change in color of div 
-// 
+//define 2 color variable
+//set 2 state color and count
+//write a function to show change in color of div
+//write a function to change in click
+
+
 
 
 
@@ -11,44 +12,42 @@
 import React from 'react';
 import './App.css';
 
+const blue = 'blue';
+const orange = 'orange';
+
 class App extends React.Component {
   constructor (props) {
     super(props);
-      this.state ={
-      color:'true',
-      clicks:'0',
+      this.state = {color: blue};
+      this.state = {value:'0'};
+      this.changeColor = this.changeColor.bind(this);
+      this.buttonClicked = this.buttonClicked.bind(this);
     };
-  }
+  
+  changeColor(){
+      const newColor = this.state.color == blue ? orange : blue;
+      this.setState({ color: newColor })
+    }
 
-clickcounter = () => {
-  this.setState( {clicks: this.state.clicks +1});
-
-  }
-
-ToggleClick = () => {
-  this.setState({show : !this.state.show });
+buttonClicked(event) {
+  this.setState({value:this.state.vale+1});
 }
 
-changecolor = () => {
-  let newColor = this.state.color =='orange';
-  this.setState(
-    {color: newColor});
+render() {
+  return (
+    <div>
+      <div style ={{background: this.state.color}} >
+        <h1>Box Color</h1>
+        <button onclick={this.changeColor}>Click</button>
+        {this.state.value}</div>
+      <button onClick= {this.buttonClicked}>Click</button>
+
+      </div>
+      // <div>{this.state.value}</div>
+      // <button onClick= {this.buttonClicked}>Click</button>
+
+    // </div>
+  )
 }
-
-    render (){
-      return (
-        <div>
-          <div className="Box">
-          onClick ={this.clickcounter}
-          onClick ={this.ToggleClick}
-          onClick={this.changecolor}
-          </div>
-        </div>
-      );
-
-
-  }
 }
-
-
-export default App;
+export default App; 
