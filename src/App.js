@@ -31,7 +31,7 @@ buttonClicked(event) {
 render() {
   return (
     <div className= "BOX">
-      <div style ={{background: this.state.color}} >
+      <div style ={{background: this.state.color}}>
         <h1>Change color</h1>
         <button onClick={this.changeColor}>Click</button>
         < div >{this.state.value}</div>
