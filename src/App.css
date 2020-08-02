@@ -2,12 +2,13 @@
 
 .BOX {
   background-color: light gray;
-  background-image: url('https://tse3.mm.bing.net/th?id=OIP.RS8j721_sbhvwtCp7GIxTQHaE-&pid=Api&P=0&w=242&h=163');
+  background-image: url('https://ww2.kqed.org/mindshift/wp-content/uploads/sites/23/2015/11/PBL-1440x884.jpg');
   background-repeat: no-repeat;
-  width: 100px;
+  width: 400px;
   height: 5000px;
-  padding-right: 750%;
+  padding-right: 1000px;
   font-family: 'Muli', sans-serif;
+  font-size: large;
 }
 
 .div {
