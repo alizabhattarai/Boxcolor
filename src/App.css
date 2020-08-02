@@ -2,12 +2,16 @@
 
 .BOX {
   background-color: light gray;
-  height: 500px;
+  /* background-image: url('https://tse3.mm.bing.net/th?id=OIP.RS8j721_sbhvwtCp7GIxTQHaE-&pid=Api&P=0&w=242&h=163');
+  background-repeat: no-repeat; */
   width: 200px;
-  padding-right: auto;
+  padding-right: 750%;
   font-family: 'Muli', sans-serif;
 }
 
+#div {
+  background-image: url('https://tse3.mm.bing.net/th?id=OIP.RS8j721_sbhvwtCp7GIxTQHaE-&pid=Api&P=0&w=242&h=163');
+}
 
 
 
