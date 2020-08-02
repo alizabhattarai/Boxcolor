@@ -2,18 +2,21 @@
 
 .BOX {
   background-color: light gray;
-  /* background-image: url('https://tse3.mm.bing.net/th?id=OIP.RS8j721_sbhvwtCp7GIxTQHaE-&pid=Api&P=0&w=242&h=163');
-  background-repeat: no-repeat; */
-  width: 200px;
+  background-image: url('https://tse3.mm.bing.net/th?id=OIP.RS8j721_sbhvwtCp7GIxTQHaE-&pid=Api&P=0&w=242&h=163');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 5000px;
   padding-right: 750%;
   font-family: 'Muli', sans-serif;
 }
 
-#div {
+.div {
   background-image: url('https://tse3.mm.bing.net/th?id=OIP.RS8j721_sbhvwtCp7GIxTQHaE-&pid=Api&P=0&w=242&h=163');
 }
 
-
+.button{
+  padding: 200px;
+}
 
 
 
